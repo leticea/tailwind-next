@@ -1,18 +1,22 @@
-import { ChevronDown, Home } from "lucide-react";
+import {
+  BarChart,
+  CheckSquare,
+  Flag,
+  Home,
+  SquareStack,
+  Users,
+} from "lucide-react";
+import { NavItem } from "./NavItem";
 
 export function MainNavigation() {
   return (
     <nav className="space-y-0.5">
-      <a
-        href=""
-        className="group flex items-center gap-3 rounded px-3 py-2 hover:bg-violet-50"
-      >
-        <Home className="h-5 w-5 text-zinc-500" />
-        <span className="font-medium text-zinc-700 group-hover:text-violet-500">
-          Home
-        </span>
-        <ChevronDown className="ml-auto h-5 w-5 text-zinc-400 group-hover:text-violet-300" />
-      </a>
+      <NavItem title="Home" icon={Home} />
+      <NavItem title="Dashboard" icon={BarChart} />
+      <NavItem title="Projects" icon={SquareStack} />
+      <NavItem title="Tasks" icon={CheckSquare} />
+      <NavItem title="Reporting" icon={Flag} />
+      <NavItem title="Users" icon={Users} />
     </nav>
   );
 }
