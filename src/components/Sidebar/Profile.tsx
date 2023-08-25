@@ -9,15 +9,18 @@ export function Profile() {
         alt=""
       />
 
-      <div className="flex flex-col">
+      <div className="flex flex-1 flex-col break-all">
         <span className="text-sm font-semibold text-zinc-700">
           Letícia Nascimento
         </span>
         <span className="text-sm text-zinc-500">leticia@leticia.com.br</span>
       </div>
 
-      <button type="button" className="ml-auto">
-        <LogOut className="h-5 w-5 text-zinc-500 hover:text-zinc-600" />
+      <button
+        type="button"
+        className="ml-auto p-2 hover:bg-zinc-100 rounded-md"
+      >
+        <LogOut className="h-5 w-5 text-zinc-500" />
       </button>
     </div>
   );
