@@ -1,3 +1,4 @@
+import { InputControl, InputRoot } from "@/components/Input";
 import { SettingsTabs } from "@/components/SettingsTabs";
 
 export default function Home() {
@@ -34,7 +35,22 @@ export default function Home() {
 
         <form id="settings" className="mt-6 flex flex-col w-full gap-5">
           <div className="grid gap-3 grid-cols-form">
-            
+            <label
+              htmlFor="firstName"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Name
+            </label>
+            <div className="grid gap-6 grid-cols-2">
+              <InputRoot>
+                <InputControl id="firstName" defaultValue="Leticia" />
+              </InputRoot>
+
+              <InputRoot>
+                <InputControl defaultValue="Nascimento" />
+              </InputRoot>
+            </div>
+            <div />
           </div>
         </form>
       </div>
