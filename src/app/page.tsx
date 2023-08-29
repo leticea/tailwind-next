@@ -32,8 +32,10 @@ export default function Home() {
           </div>
         </div>
 
-        <form id="settings" className="mt-6 flex flex-col w-full">
-          form
+        <form id="settings" className="mt-6 flex flex-col w-full gap-5">
+          <div className="grid gap-3 grid-cols-form">
+            
+          </div>
         </form>
       </div>
     </>
