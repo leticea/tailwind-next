@@ -1,5 +1,6 @@
-import { InputControl, InputRoot } from "@/components/Input";
+import { InputControl, InputPrefix, InputRoot } from "@/components/Input";
 import { SettingsTabs } from "@/components/SettingsTabs";
+import { Mail } from "lucide-react";
 
 export default function Home() {
   return (
@@ -50,7 +51,25 @@ export default function Home() {
                 <InputControl defaultValue="Nascimento" />
               </InputRoot>
             </div>
-            <div />
+          </div>
+
+          <div className="grid gap-3 grid-cols-form">
+            <label
+              htmlFor="email"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Email address
+            </label>
+            <InputRoot>
+            <InputPrefix>
+              <Mail className="h-5 w-5 text-zinc-500" />
+            </InputPrefix>
+              <InputControl
+                id="email"
+                type="email"
+                defaultValue="leticia@leticia.com.br"
+              />
+            </InputRoot>
           </div>
         </form>
       </div>
