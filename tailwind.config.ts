@@ -11,6 +11,9 @@ const config: Config = {
       maxWidth: {
         app: "700px",
       },
+      borderWidth: {
+        6: "6px",
+      },
     },
   },
   plugins: [],
