@@ -99,8 +99,15 @@ export default function Home() {
                 </div>
 
                 <div className="flex flex-col items-center gap-1">
-                  <span>Click to upload or drag and drop</span>
-                  <span>SVG, PNG, JPG, or GIF (max. 800x400px)</span>
+                  <span className="text-sm">
+                    <span className="font-semibold text-violet-700">
+                      Click to upload
+                    </span>{" "}
+                    or drag and drop
+                  </span>
+                  <span className="text-xs">
+                    SVG, PNG, JPG, or GIF (max. 800x400px)
+                  </span>
                 </div>
               </label>
 
