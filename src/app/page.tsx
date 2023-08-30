@@ -1,6 +1,6 @@
 import { InputControl, InputPrefix, InputRoot } from "@/components/Input";
 import { SettingsTabs } from "@/components/SettingsTabs";
-import { Mail } from "lucide-react";
+import { Mail, User } from "lucide-react";
 
 export default function Home() {
   return (
@@ -85,7 +85,13 @@ export default function Home() {
                 This will be displayed on your profile.
               </span>
             </label>
-            <div></div>
+            <div>
+              <div className="bg-violet-50 flex h-16 w-16 items-center justify-center rounded-full">
+                <User className="h-8 w-8 text-violet-500" />
+              </div>
+
+              
+            </div>
           </div>
 
           <div className="grid gap-3 grid-cols-form pt-5">
@@ -141,7 +147,7 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end gap-2 pt-5">
-          <button
+            <button
               type="button"
               className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm border border-zinc-300 text-zinc-700 hover:bg-zinc-50"
             >
