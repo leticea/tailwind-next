@@ -7,7 +7,6 @@ export default function Home() {
   return (
     <>
       <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
-
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col">
@@ -147,7 +146,6 @@ export default function Home() {
               <FileInput.Control multiple />
             </FileInput.Root>
           </div>
-
           <div className="flex items-center justify-end gap-2 pt-5">
             <button
               type="button"
