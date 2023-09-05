@@ -2,6 +2,7 @@
 
 import { UploadCloud } from "lucide-react";
 import { useFileInput } from "./Root";
+import { formatBytes } from "@/utils/format-bytes";
 
 export function FileList() {
   const { files } = useFileInput();
@@ -22,7 +23,9 @@ export function FileList() {
                 <span className="text-sm font-medium text-zinc-700">
                   {file.name}
                 </span>
-                <span className="text-sm text-zinc-500">{file.size}</span>
+                <span className="text-sm text-zinc-500">
+                  {formatBytes(file.size)}
+                </span>
               </div>
             </div>
           </div>
