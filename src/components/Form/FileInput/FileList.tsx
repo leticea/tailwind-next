@@ -18,7 +18,6 @@ export function FileList() {
             <div className="rounded-full border-4 border-violet-100 bg-violet-200 p-2 text-violet-600">
               <UploadCloud className="h-4 w-4" />
             </div>
-
             <div className="flex flex-1 flex-col items-start gap-1">
               <div className="flex flex-col">
                 <span className="text-sm font-medium text-zinc-700">
