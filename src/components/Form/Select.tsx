@@ -14,6 +14,12 @@ export function Select(props: SelectProps) {
           <ChevronDown className="h-5 w-5 text-zinc-500" />
         </SelectPrimitive.Icon>
       </SelectPrimitive.Trigger>
+
+      <SelectPrimitive.Portal>
+        <SelectPrimitive.Content>
+          <SelectPrimitive.Viewport></SelectPrimitive.Viewport>
+        </SelectPrimitive.Content>
+      </SelectPrimitive.Portal>
     </SelectPrimitive.Root>
   );
 }
