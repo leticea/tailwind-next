@@ -1,7 +1,7 @@
 "use client";
 
 import * as SelectPrimitive from "@radix-ui/react-select";
-import { ChevronDown } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 
 export interface SelectProps {}
 
@@ -16,8 +16,22 @@ export function Select(props: SelectProps) {
       </SelectPrimitive.Trigger>
 
       <SelectPrimitive.Portal>
-        <SelectPrimitive.Content>
-          <SelectPrimitive.Viewport></SelectPrimitive.Viewport>
+        <SelectPrimitive.Content
+          side="bottom"
+          position="popper"
+          className="z-10 rounded-lg border border-zinc-200 bg-white"
+        >
+          <SelectPrimitive.Viewport>
+            <SelectPrimitive.Item className="flex items-center gap-2 px-3 py-2.5">
+              <SelectPrimitive.ItemText className="text-black">
+                Brasil
+              </SelectPrimitive.ItemText>
+
+              <SelectPrimitive.ItemIndicator>
+                <Check className="h-4 w-4 text-violet-500" />
+              </SelectPrimitive.ItemIndicator>
+            </SelectPrimitive.Item>
+          </SelectPrimitive.Viewport>
         </SelectPrimitive.Content>
       </SelectPrimitive.Portal>
     </SelectPrimitive.Root>
