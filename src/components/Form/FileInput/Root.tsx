@@ -32,7 +32,7 @@ export function Root(props: RootProps) {
 
   return (
     <FileInputContext.Provider value={{ id, files, onFilesSelected }}>
-      <div {...props} />;
+      <div {...props} />
     </FileInputContext.Provider>
   );
 }
