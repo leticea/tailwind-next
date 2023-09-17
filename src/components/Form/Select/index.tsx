@@ -26,18 +26,7 @@ export function Select(props: SelectProps) {
           className="z-10 rounded-lg border border-zinc-200 bg-white w-[--radix-select-trigger-width] overflow-hidden"
         >
           <SelectPrimitive.Viewport>
-            <SelectPrimitive.Item
-              value="br"
-              className="flex items-center justify-between gap-2 px-3 py-2.5 outline-none data-[highlighted]:bg-zinc-100"
-            >
-              <SelectPrimitive.ItemText className="text-black">
-                Brazil
-              </SelectPrimitive.ItemText>
-
-              <SelectPrimitive.ItemIndicator>
-                <Check className="h-4 w-4 text-violet-500" />
-              </SelectPrimitive.ItemIndicator>
-            </SelectPrimitive.Item>
+            
 
             <SelectPrimitive.Item
               value="us"
