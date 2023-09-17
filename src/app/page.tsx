@@ -1,6 +1,6 @@
 import { InputControl, InputPrefix, InputRoot } from "@/components/Input";
 import { SettingsTabs } from "@/components/SettingsTabs";
-import { Mail } from "lucide-react";
+import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
 import * as FileInput from "@/components/Form/FileInput";
 import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/SelectItem";
@@ -140,7 +140,52 @@ export default function Home() {
                 Write a short introduction.
               </span>
             </label>
-            <div></div>
+            <div className="space-y-3">
+              <div className="grid gap-3 grid-cols-2">
+                <Select placeholder="" defaultValue="normal">
+                  <SelectItem
+                    value="normal"
+                    defaultChecked
+                    text="Normal Text"
+                  />
+                  <SelectItem value="md" text="Markdown" />
+                </Select>
+
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    className="p-2 hover:bg-zinc-100 rounded-md"
+                  >
+                    <Bold className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+                  <button
+                    type="button"
+                    className="p-2 hover:bg-zinc-100 rounded-md"
+                  >
+                    <Italic className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+                  <button
+                    type="button"
+                    className="p-2 hover:bg-zinc-100 rounded-md"
+                  >
+                    <Link className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+                  <button
+                    type="button"
+                    className="p-2 hover:bg-zinc-100 rounded-md"
+                  >
+                    <List className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+                  <button
+                    type="button"
+                    className="p-2 hover:bg-zinc-100 rounded-md"
+                  >
+                    <ListOrdered className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                  </button>
+                </div>
+              </div>
+              <div></div>
+            </div>
           </div>
 
           <div className="grid gap-3 grid-cols-form pt-5">
@@ -159,6 +204,7 @@ export default function Home() {
               <FileInput.Control multiple />
             </FileInput.Root>
           </div>
+
           <div className="flex items-center justify-end gap-2 pt-5">
             <button
               type="button"
