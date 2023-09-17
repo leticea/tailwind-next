@@ -180,11 +180,19 @@ export default function Home() {
                     type="button"
                     className="p-2 hover:bg-zinc-100 rounded-md"
                   >
-                    <ListOrdered className="h-4 w-4 text-zinc-500" strokeWidth={3} />
+                    <ListOrdered
+                      className="h-4 w-4 text-zinc-500"
+                      strokeWidth={3}
+                    />
                   </button>
                 </div>
               </div>
-              <div></div>
+
+              <textarea
+                id="bio"
+                className="min-h-[120px] resize-y w-full rounded-lg border border-zinc-300 px-3 py-2 shadow-sm"
+                defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy and Webflow development."
+              />
             </div>
           </div>
 
