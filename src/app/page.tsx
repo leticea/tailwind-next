@@ -4,6 +4,7 @@ import { Bold, Italic, Link, List, ListOrdered, Mail } from "lucide-react";
 import * as FileInput from "@/components/Form/FileInput";
 import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/SelectItem";
+import { Textarea } from "@/components/Form/Textarea";
 
 export default function Home() {
   return (
@@ -188,9 +189,8 @@ export default function Home() {
                 </div>
               </div>
 
-              <textarea
+              <Textarea
                 id="bio"
-                className="min-h-[120px] resize-y w-full rounded-lg border border-zinc-300 px-3 py-2 shadow-sm"
                 defaultValue="I'm a Product Designer based in Melbourne, Australia. I specialise in UX/UI design, brand strategy and Webflow development."
               />
             </div>
