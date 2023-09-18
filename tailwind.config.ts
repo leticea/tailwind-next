@@ -19,6 +19,22 @@ const config: Config = {
           25: "#fcfaff",
         },
       },
+
+      keyframes: {
+        slideDownAndFade: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        slideUpAndFade: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
+      },
+
+      animation: {
+        slideDownAndFade: "slideDownAndFade 1s linear",
+        slideUpAndFade: "slideUpAndFade 1s linear",
+      },
     },
   },
   plugins: [],
