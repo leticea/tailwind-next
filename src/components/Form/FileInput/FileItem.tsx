@@ -1,6 +1,6 @@
 import { Button } from "@/components/Button";
 import { formatBytes } from "@/utils/format-bytes";
-import { Trash2, UploadCloud } from "lucide-react";
+import { CheckCircle2, Trash2, UploadCloud } from "lucide-react";
 
 export interface FileItemProps {
   name: string;
@@ -8,6 +8,8 @@ export interface FileItemProps {
 }
 
 export function FileItem({ name, size }: FileItemProps) {
+  const state = "complete";
+
   return (
     <div className="group flex items-start gap-4 rounded-lg border border-zinc-200 p-4">
       <div className="rounded-full border-4 border-violet-100 bg-violet-200 p-2 text-violet-600">
@@ -22,15 +24,24 @@ export function FileItem({ name, size }: FileItemProps) {
 
         <div className="flex w-full items-center gap-3">
           <div className="h-2 flex-1 rounded-full bg-zinc-100">
-            <div className="h-2 rounded-full bg-violet-600 w-4/5" />
+            <div
+              className="h-2 rounded-full bg-violet-600"
+              style={{ width: state === "complete" ? "100%" : "80%" }}
+            />
           </div>
-          <span className="text-sm font-medium text-zinc-700">80%</span>
+          <span className="text-sm font-medium text-zinc-700">
+            {state === "complete" ? "100%" : "80%"}
+          </span>
         </div>
       </div>
 
-      <Button type="button" variant="ghost">
-        <Trash2 className="h-5 w-5 text-zinc-500" />
-      </Button>
+      {state === "complete" ? (
+        <CheckCircle2 className="h-5 w-5 fill-violet-600 text-white" />
+      ) : (
+        <Button type="button" variant="ghost">
+          <Trash2 className="h-5 w-5 text-zinc-500" />
+        </Button>
+      )}
     </div>
   );
 }
