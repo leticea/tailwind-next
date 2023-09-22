@@ -22,13 +22,8 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items-center gap-2">
-            <button
-              type="button"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm border border-zinc-300 text-zinc-700 hover:bg-zinc-50"
-            >
-              Cancel
-            </button>
-            <Button type="submit" form="settings">
+            <Button type="button">Cancel</Button>
+            <Button variant="primary" type="submit" form="settings">
               Save
             </Button>
           </div>
