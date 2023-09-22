@@ -5,6 +5,7 @@ import * as FileInput from "@/components/Form/FileInput";
 import { Select } from "@/components/Form/Select";
 import { SelectItem } from "@/components/Form/Select/SelectItem";
 import { Textarea } from "@/components/Form/Textarea";
+import { Button } from "@/components/Button";
 
 export default function Home() {
   return (
@@ -27,13 +28,9 @@ export default function Home() {
             >
               Cancel
             </button>
-            <button
-              type="submit"
-              form="settings"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700"
-            >
+            <Button type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </div>
 

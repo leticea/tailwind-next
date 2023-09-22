@@ -7,10 +7,16 @@ const button = tv({
     "focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-violet-500",
     "active:opacity-80",
   ],
+
+  variants: {
+    variant: {
+      primary: "bg-violet-600 text-white hover:bg-violet-700",
+    },
+  },
 });
 
 export type ButtonProps = ComponentProps<"button">;
 
 export function Button(props: ButtonProps) {
-  return <button {...props} className={button()} />;
+return <button {...props} className={button({ variant: 'primary' })} />;
 }
