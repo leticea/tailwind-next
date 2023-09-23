@@ -1,3 +1,5 @@
+"use client";
+
 import {
   BarChart,
   CheckSquare,
@@ -5,6 +7,7 @@ import {
   Flag,
   Home,
   LifeBuoy,
+  Menu,
   Search,
   SquareStack,
   Users,
@@ -24,12 +27,15 @@ export function Sidebar() {
         <Logo />
         <Collapsible.Trigger asChild className="lg:hidden">
           <Button variant="ghost">
-            
+            <Menu className="h-6 w-6" />
           </Button>
         </Collapsible.Trigger>
       </div>
 
-      <Collapsible.Content>
+      <Collapsible.Content
+        forceMount
+        className="flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
+      >
         <InputRoot>
           <InputPrefix>
             <Search className="h-5 w-5 text-zinc-500" />
