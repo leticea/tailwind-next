@@ -14,7 +14,7 @@ export default function Home() {
       <SettingsTabs />
 
       <div className="mt-6 flex flex-col">
-        <div className="flex justify-between items-center pb-5 border-b border-zinc-200">
+        <div className="flex flex-col lg:flex-row gap-4 justify-between lg:items-center pb-5 border-b border-zinc-200">
           <div className="space-y-1">
             <h2 className="text-lg font-medium text-zinc-900">Personal Info</h2>
             <span className="text-sm text-zinc-500">
@@ -35,21 +35,30 @@ export default function Home() {
           id="settings"
           className="mt-6 flex flex-col w-full gap-5 divide-y divide-zinc-200"
         >
-          <div className="grid gap-3 grid-cols-form">
+          <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form">
             <label
               htmlFor="firstName"
               className="text-sm font-medium text-zinc-700"
             >
               Name
             </label>
-            <div className="grid gap-6 grid-cols-2">
+            <div className="flex flex-col lg:grid gap-6 lg:grid-cols-2">
               <InputRoot>
                 <InputControl id="firstName" defaultValue="Leticia" />
               </InputRoot>
 
-              <InputRoot>
-                <InputControl defaultValue="Nascimento" />
-              </InputRoot>
+              <div className="flex flex-col gap-3 lg:block">
+                <label
+                  htmlFor="lastName"
+                  className="text-sm font-medium text-zinc-700 lg:sr-only"
+                >
+                  Last name
+                </label>
+
+                <InputRoot>
+                  <InputControl id="lastName" defaultValue="Nascimento" />
+                </InputRoot>
+              </div>
             </div>
           </div>
 
