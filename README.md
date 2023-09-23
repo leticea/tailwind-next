@@ -16,9 +16,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Nodejs](https://nodejs.org/en/) - v18.12.1
 - [Npm](https://www.npmjs.com/) - 8.19.2
 - [React](https://reactjs.org/) - ^18.2.0
+- [Next](https://nextjs.org/) - 13.4.19
 - [TypeScript](https://www.typescriptlang.org/) - ^4.9.3
 - [Tailwindcss](https://tailwindcss.com/) - ^3.2.4
+- [Tailwind-Variants](https://www.tailwind-variants.org/docs/introduction) - ^0.1.14
 - [Radix UI](https://www.radix-ui.com/)
+- [Formkit AutoAnimate](https://auto-animate.formkit.com/) - ^0.8.0
+- [Framer Motion](https://www.framer.com/motion/) - ^10.16.1
+- [Lucide React](https://lucide.dev/guide/packages/lucide-react) - ^0.268.0
 
 ## 💻 Projeto
 
