@@ -22,7 +22,7 @@ import { Button } from "../Button";
 
 export function Sidebar() {
   return (
-    <Collapsible.Root className="border-zinc-200 border-b bottom-0 flex flex-col gap-6 p-4 fixed left-0 top-0 right-0 z-20 bg-white lg:right-auto lg:w-80 lg:border-r lg:px-5 lg:py-8">
+    <Collapsible.Root className="border-zinc-200 border-b data-[state=open]:h-screen data-[state=open]:bottom-0 data-[state=cloded]:h-screen data-[state=cloded]:bottom-0 flex flex-col gap-6 p-4 fixed left-0 top-0 right-0 z-20 bg-white lg:right-auto lg:w-80 lg:border-r lg:px-5 lg:py-8">
       <div className="flex items-center justify-between">
         <Logo />
         <Collapsible.Trigger asChild className="lg:hidden">
@@ -34,7 +34,7 @@ export function Sidebar() {
 
       <Collapsible.Content
         forceMount
-        className="flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
+        className="flex flex-1 flex-col gap-6 data-[state=closed]:hidden lg:data-[state=closed]:flex"
       >
         <InputRoot>
           <InputPrefix>
