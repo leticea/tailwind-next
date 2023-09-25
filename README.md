@@ -27,7 +27,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto desenvolvido com Next para aprender alguns conceitos sobre Tailwindcss.
+Projeto desenvolvido com Nextjs para aprender alguns conceitos sobre Tailwindcss.
 
 <p align="center">
   <img alt="" src=".github/image.png">
@@ -44,7 +44,6 @@ Projeto desenvolvido com Next para aprender alguns conceitos sobre Tailwindcss.
 ## 🚀 Como Rodar
 
 - Clone o projeto.
-- Clone o projeto da API para rodar o projeto junto.
 - Entre na pasta do projeto e rode 'npm install' (use 'yarn add' se for essa a sua configuração).
 - npm run dev para rodar o projeto na porta indicada.
 
