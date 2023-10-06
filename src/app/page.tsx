@@ -104,7 +104,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form pt-5">
-            <label htmlFor="role" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            <label
+              htmlFor="role"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
+            >
               Role
             </label>
             <InputRoot>
@@ -143,7 +146,10 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form pt-5">
-            <label htmlFor="bio" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
+            <label
+              htmlFor="bio"
+              className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
+            >
               Bio
               <span className="text-sm font-normal text-zinc-500 block mt-0.5">
                 Write a short introduction.

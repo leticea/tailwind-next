@@ -14,7 +14,9 @@ export function Profile() {
         <span className="text-sm font-semibold text-zinc-700 dark:text-zinc-100">
           Letícia Nascimento
         </span>
-        <span className="text-sm text-zinc-500 dark:text-zinc-400">leticia@leticia.com.br</span>
+        <span className="text-sm text-zinc-500 dark:text-zinc-400">
+          leticia@leticia.com.br
+        </span>
       </div>
 
       <Button type="button" variant="ghost">
