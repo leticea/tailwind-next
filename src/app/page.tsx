@@ -92,7 +92,7 @@ export default function Home() {
               className="text-sm font-medium text-zinc-700 dark:text-zinc-300"
             >
               Your photo
-              <span className="text-sm font-normal text-zinc-500 block mt-0.5 dark:text-zinc-400">
+              <span className="text-sm font-normal text-zinc-500 block mt-0.5">
                 This will be displayed on your profile.
               </span>
             </label>
@@ -145,7 +145,7 @@ export default function Home() {
           <div className="flex flex-col gap-3 lg:grid lg:grid-cols-form pt-5">
             <label htmlFor="bio" className="text-sm font-medium text-zinc-700 dark:text-zinc-300">
               Bio
-              <span className="text-sm font-normal text-zinc-500 block mt-0.5 dark:text-zinc-300">
+              <span className="text-sm font-normal text-zinc-500 block mt-0.5">
                 Write a short introduction.
               </span>
             </label>
