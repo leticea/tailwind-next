@@ -28,6 +28,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Projeto desenvolvido com Nextjs para aprender vários conceitos sobre Tailwindcss.
 
+- Módulo Masterizando o Tailwind do Ignite na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
+
 <p align="center">
   <img alt="" src=".github/image.png">
 </p>
