@@ -41,7 +41,7 @@ Projeto desenvolvido com Nextjs para aprender alguns conceitos sobre Tailwindcss
 </p>
 
 <p align="center">
-  <img alt="" src=".github/image4.png">
+  <img height="489,50" width="321" alt="" src=".github/image4.png">
 </p>
 
 ## ⚙️ Como Rodar
