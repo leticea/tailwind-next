@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto desenvolvido com Nextjs para aprender alguns conceitos sobre Tailwindcss.
+Projeto desenvolvido com Nextjs para aprender vários conceitos sobre Tailwindcss.
 
 <p align="center">
   <img alt="" src=".github/image.png">
