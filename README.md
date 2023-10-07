@@ -7,7 +7,7 @@
 
 <br>
 
-# Dashboard with Tailwind and Nextjs
+# Dashboard with Tailwind CSS and Nextjs
 
 ## 🚀 Tecnologias
 
@@ -26,7 +26,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
 
-Projeto desenvolvido com Nextjs para aprender vários conceitos sobre Tailwindcss.
+Projeto desenvolvido com Nextjs para aprender vários conceitos sobre Tailwind CSS, um framework de CSS focado em utilities. O Tailwind utiliza o conceito de interface declarativa, onde a estilização é feita próximo à estrutura do projeto. Isso evita a repetição de classes e facilita a estilização de elementos com variações.
 
 - Módulo Masterizando o Tailwind do Ignite na plataforma da [Rocketseat](https://www.rocketseat.com.br/).
 
