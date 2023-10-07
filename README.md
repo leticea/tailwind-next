@@ -7,7 +7,7 @@
 
 <br>
 
-# Tailwind With Nextjs
+# Dashboard with Tailwind and Nextjs
 
 ## 🚀 Tecnologias
 
@@ -15,8 +15,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - [Nodejs](https://nodejs.org/en/) - v18.12.1
 - [Npm](https://www.npmjs.com/) - 8.19.2
-- [React](https://reactjs.org/) - ^18.2.0
-- [Next](https://nextjs.org/) - 13.4.19
+- [Nextjs](https://nextjs.org/) - 13.4.19
 - [TypeScript](https://www.typescriptlang.org/) - ^4.9.3
 - [Tailwindcss](https://tailwindcss.com/) - ^3.2.4
 - [Tailwind-Variants](https://www.tailwind-variants.org/docs/introduction) - ^0.1.14
@@ -41,7 +40,11 @@ Projeto desenvolvido com Nextjs para aprender alguns conceitos sobre Tailwindcss
   <img alt="" src=".github/image3.png">
 </p>
 
-## 🚀 Como Rodar
+<p align="center">
+  <img alt="" src=".github/image4.png">
+</p>
+
+## ⚙️ Como Rodar
 
 - Clone o projeto.
 - Entre na pasta do projeto e rode 'npm install' (use 'yarn add' se for essa a sua configuração).
