@@ -37,7 +37,7 @@ Projeto desenvolvido com Nextjs para aprender alguns conceitos sobre Tailwindcss
 </p>
 
 <p align="center">
-  <img alt="" src=".github/image3.png">
+  <img height="1256,50" width="320" alt="" src=".github/image3.png">
 </p>
 
 <p align="center">
